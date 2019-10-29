@@ -1,0 +1,21 @@
+{
+  "name": "nissanbody-kyushu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-imageoptim": "^1.0.9",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0"
+  }
+}

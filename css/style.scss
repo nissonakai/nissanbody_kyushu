@@ -1,0 +1,86 @@
+$pc :1023px;
+
+@mixin pc {
+  @media only screen and (min-width: ($pc)){
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, ul, li, h1, h2, h3, p, section, header, footer, nav, form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3",
+   "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック",
+   "MS PGothic", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* general */
+
+.logo {
+  width: 200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: block;
+}
+
+.btn {
+  display: block;
+  width: 40%;
+  margin: 1rem auto 2rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #ad001d;
+  color: #ffffff;
+  filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.9));
+}
+
+/* section points */
+
+.points {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.points-title {
+  text-align: center;
+}
+
+.points-detail {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* section apply-detail */
+
+.apply-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+dt {
+  color: #fff;
+  background-color: #070768;
+  padding: .3rem;
+  font-weight: bold;
+}
+
+dd {
+  padding: .5rem;
+  line-height: 1.5rem;
+}
