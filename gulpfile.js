@@ -70,4 +70,3 @@ const build_source = () => {
 exports.sass = watchSassFiles;
 exports.images = images;
 exports.build = build;
-exports.build_source = build_source;

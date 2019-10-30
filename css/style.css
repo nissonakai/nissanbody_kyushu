@@ -83,6 +83,7 @@ img {
   display: block;
   width: 90%;
   margin: 0 auto 3rem;
+  border: 1px solid #000;
   -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
 }
@@ -110,4 +111,50 @@ img {
 .apply-box dd {
   line-height: 1.5rem;
   padding: .5rem;
+}
+
+/* section faq */
+
+.faq-title {
+  text-align: center;
+}
+
+.faq-box {
+  max-width: 400px;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.faq-box label {
+  font-weight: bold;
+  display: block;
+  margin: 1.5px 0;
+  padding: 11px 12px;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  color: #2f8fcf;
+  background: #a4cbf3;
+}
+
+.faq-box input {
+  display: none;
+}
+
+.faq-box .faq-show {
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 0;
+}
+
+/*クリックで中身表示*/
+
+.faq-hook:checked + .faq-show {
+  height: auto;
+  padding: 5px;
+  opacity: 1;
+  background: #eaeaea;
 }

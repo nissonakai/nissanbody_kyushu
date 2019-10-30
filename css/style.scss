@@ -73,6 +73,7 @@ img {
     display: block;
     width: 90%;
     margin: 0 auto 3rem;
+    border: 1px solid #000;
     filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.3));
 }
 
@@ -87,7 +88,7 @@ img {
   width: 90%;
   margin: 0 auto;
   border: 1px solid #070768;
-  
+
   dt {
     color: #fff;
     background-color: #070768;
@@ -99,4 +100,44 @@ img {
     padding: .5rem;
     line-height: 1.5rem;
   }
+}
+
+/* section faq */
+
+.faq-title {
+  text-align: center;
+}
+
+.faq-box {
+  margin: 2em 0;
+  padding: 0;
+  max-width: 400px;
+  label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 11px 12px;
+    color :#2f8fcf;
+    font-weight: bold;
+    background :#a4cbf3;
+    cursor :pointer;
+    transition: all 0.5s;
+  }
+  input {
+    display: none;
+  }
+  .faq-show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+  }
+}
+
+/*クリックで中身表示*/
+.faq-hook:checked + .faq-show {
+  height: auto;
+  padding: 5px;
+  background: #eaeaea;
+  opacity: 1;
 }
