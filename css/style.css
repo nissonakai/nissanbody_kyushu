@@ -18,6 +18,9 @@ footer,
 nav,
 form,
 input,
+dl,
+dd,
+dt,
 div {
   margin: 0;
   padding: 0;
@@ -56,11 +59,20 @@ img {
   filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.9));
 }
 
+.text_em {
+  font-weight: bold;
+}
+
+.text_alert {
+  font-size: 140%;
+  color: #ad001d;
+}
+
 /* section points */
 
 .points {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .points-title {
@@ -70,7 +82,9 @@ img {
 .points-detail {
   display: block;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
+  -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
 }
 
 /* section apply-detail */
@@ -80,14 +94,20 @@ img {
   text-align: center;
 }
 
-dt {
+.apply-box {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #070768;
+}
+
+.apply-box dt {
   font-weight: bold;
-  padding: .3rem;
+  padding: .8rem;
   color: #fff;
   background-color: #070768;
 }
 
-dd {
+.apply-box dd {
   line-height: 1.5rem;
   padding: .5rem;
 }

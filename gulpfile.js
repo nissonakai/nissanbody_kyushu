@@ -54,7 +54,7 @@ const images = () => {
 const build = () => {
   return src([
     "index.html",
-    "**/img/*.png",
+    "**/img/*",
     "**/css/*.css"])
     .pipe(dest('dist'));
 };
@@ -67,7 +67,7 @@ const build_source = () => {
   ]).pipe(dest("dist_source"));
 }
 
-exports.default = watchSassFiles;
+exports.sass = watchSassFiles;
 exports.images = images;
 exports.build = build;
 exports.build_source = build_source;

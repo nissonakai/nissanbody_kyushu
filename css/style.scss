@@ -10,7 +10,7 @@ $pc :1023px;
   box-sizing: border-box;
 }
 
-html, body, ul, li, h1, h2, h3, p, section, header, footer, nav, form, input, div {
+html, body, ul, li, h1, h2, h3, p, section, header, footer, nav, form, input, dl, dd, dt, div {
   margin: 0;
   padding: 0;
 }
@@ -49,11 +49,20 @@ img {
   filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.9));
 }
 
+.text_em {
+  font-weight: bold;
+}
+
+.text_alert {
+  color: #ad001d;
+  font-size: 140%;
+}
+
 /* section points */
 
 .points {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .points-title {
@@ -63,7 +72,8 @@ img {
 .points-detail {
     display: block;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
+    filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.3));
 }
 
 /* section apply-detail */
@@ -73,14 +83,20 @@ img {
   margin-bottom: 1rem;
 }
 
-dt {
-  color: #fff;
-  background-color: #070768;
-  padding: .3rem;
-  font-weight: bold;
-}
-
-dd {
-  padding: .5rem;
-  line-height: 1.5rem;
+.apply-box {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #070768;
+  
+  dt {
+    color: #fff;
+    background-color: #070768;
+    padding: .8rem;
+    font-weight: bold;
+  }
+  
+  dd {
+    padding: .5rem;
+    line-height: 1.5rem;
+  }
 }
