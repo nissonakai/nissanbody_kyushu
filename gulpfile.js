@@ -71,7 +71,7 @@ const images = () => {
 };
 
 
-const outputPath = "../../nissanbody-kyushu";
+const outputPath = "dist";
 
 const build = () => {
   return src([
