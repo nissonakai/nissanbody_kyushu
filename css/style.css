@@ -47,8 +47,8 @@ img {
 .btn {
   font-weight: bold;
   display: block;
-  width: 40%;
-  margin: 1rem auto 2rem;
+  width: 45%;
+  margin: 1rem auto 4rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -66,6 +66,11 @@ img {
 .text_alert {
   font-size: 140%;
   color: #ad001d;
+}
+
+.flex {
+  display: -webkit-box;
+  display: flex;
 }
 
 /* section points */
@@ -116,45 +121,80 @@ img {
 /* section faq */
 
 .faq-title {
+  margin-bottom: 1rem;
   text-align: center;
 }
 
 .faq-box {
-  max-width: 400px;
-  margin: 2em 0;
-  padding: 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.faq-box label {
-  font-weight: bold;
-  display: block;
-  margin: 1.5px 0;
-  padding: 11px 12px;
-  cursor: pointer;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  color: #2f8fcf;
-  background: #a4cbf3;
+.faq-box dl {
+  width: 100%;
 }
 
-.faq-box input {
+.faq-box dd,
+.faq-box dt {
+  margin-bottom: 1rem;
+}
+
+.faq-box dt p {
+  display: inline;
+}
+
+.faq-box dd {
+  display: -webkit-box;
+  display: flex;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.faq-box dd.hidden {
   display: none;
 }
 
-.faq-box .faq-show {
-  overflow: hidden;
-  height: 0;
-  padding: 0;
-  -webkit-transition: .8s;
-  transition: .8s;
-  opacity: 0;
+.faq-box .faq-text {
+  width: 80%;
 }
 
-/*クリックで中身表示*/
+.faq-circle {
+  font-size: .8rem;
+  font-weight: bold;
+  line-height: 2rem;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: .5rem;
+  text-align: center;
+  border-radius: 50%;
+}
 
-.faq-hook:checked + .faq-show {
-  height: auto;
-  padding: 5px;
+.faq-circle.faq-q {
+  color: #fff;
+  background-color: #efcc3a;
+}
+
+.faq-circle.faq-a {
+  color: #fff;
+  background-color: #070768;
+}
+
+.faq-arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
   opacity: 1;
-  background: #eaeaea;
+  fill: #4b4b4b;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+
+footer p {
+  font-size: .4rem;
+  padding: 3rem;
 }
