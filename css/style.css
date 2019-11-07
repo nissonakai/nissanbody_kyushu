@@ -59,6 +59,11 @@ img {
   filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.9));
 }
 
+.section-title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .text_em {
   font-weight: bold;
 }
@@ -95,15 +100,11 @@ img {
 
 /* section apply-detail */
 
-.apply-title {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
 .apply-box {
-  width: 90%;
-  margin: 0 auto;
-  border: 1px solid #070768;
+  width: 85%;
+  margin: 0 auto 2rem;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .apply-box dt {
@@ -119,11 +120,6 @@ img {
 }
 
 /* section faq */
-
-.faq-title {
-  margin-bottom: 1rem;
-  text-align: center;
-}
 
 .faq-box {
   width: 90%;
