@@ -78,7 +78,7 @@ const build = () => {
     "index.html",
     "**/img/*",
     "**/css/style.css",
-    "**/js/main.js"])
+    "**/js/*"])
     .pipe(dest(outputPath));
 };
 
