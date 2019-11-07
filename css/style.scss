@@ -111,7 +111,7 @@ img {
 
 .faq-box {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   & dl {
     width: 100%;
   }
@@ -159,7 +159,11 @@ img {
   width: 20px;
   height: 20px;
   opacity: 1;
+  &.active {
+    transform: rotate(180deg);
+  }
 }
+
 
 footer {
   background-color: #000;

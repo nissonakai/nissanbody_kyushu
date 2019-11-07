@@ -8,7 +8,7 @@ $(() => {
                     $(this).css("display", "flex");
                 }
             });
-            return false;
+            $(this).find(".faq-arrow").toggleClass("active");
         });
     });
 });
