@@ -114,15 +114,15 @@ img {
   & dl {
     width: 100%;
   }
-  & dd, & dt {
+  & dt {
     margin-bottom: 1rem;
   }
-  & dt p {
+  & p {
     display: inline;
   }
-  & dd {
-    display: flex;
-    transition: .8s;
+  & .faq-answer {
+    width: 90%;
+    margin: 0 auto 1rem;
     &.hidden {
       display: none;
     }

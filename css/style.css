@@ -131,23 +131,20 @@ img {
   width: 100%;
 }
 
-.faq-box dd,
 .faq-box dt {
   margin-bottom: 1rem;
 }
 
-.faq-box dt p {
+.faq-box p {
   display: inline;
 }
 
-.faq-box dd {
-  display: -webkit-box;
-  display: flex;
-  -webkit-transition: .8s;
-  transition: .8s;
+.faq-box .faq-answer {
+  width: 90%;
+  margin: 0 auto 1rem;
 }
 
-.faq-box dd.hidden {
+.faq-box .faq-answer.hidden {
   display: none;
 }
 
