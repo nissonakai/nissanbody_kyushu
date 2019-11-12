@@ -45,9 +45,10 @@ img {
 }
 
 .btn {
+  font-size: 1.4rem;
   font-weight: bold;
   display: block;
-  width: 45%;
+  width: 65%;
   margin: 1rem auto 4rem;
   padding: 1rem;
   text-align: center;
@@ -195,7 +196,16 @@ footer {
   background-color: #000;
 }
 
-footer p {
-  font-size: .4rem;
+footer .footer-box {
   padding: 3rem;
+}
+
+footer .footer-box p {
+  font-size: .4rem;
+  margin-bottom: 1rem;
+}
+
+footer .footer-box .footer-logo {
+  width: 30%;
+  margin: 0 auto;
 }

@@ -37,15 +37,16 @@ img {
 
 .btn {
   display: block;
-  width: 45%;
+  width: 65%;
   margin: 1rem auto 4rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.4rem;
   border-radius: 10px;
   background-color: #ad001d;
-  color: #ffffff;
+  color: #fff;
   filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.9));
 }
 
@@ -93,14 +94,12 @@ img {
   margin: 0 auto 2rem;
   border: 1px solid #000;
   box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
-
   dt {
     color: #fff;
     background-color: #070768;
     padding: .8rem;
     font-weight: bold;
   }
-  
   dd {
     padding: .5rem;
     line-height: 1.5rem;
@@ -169,8 +168,15 @@ footer {
   background-color: #000;
   color: #ffffff;
   text-align: center;
-  p {
-    font-size: .4rem;
+  .footer-box {
     padding: 3rem;
+    p {
+      font-size: .4rem;
+      margin-bottom: 1rem;
+    }
+    .footer-logo {
+      width: 30%;
+      margin: 0 auto;
+    }
   }
 }
