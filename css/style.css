@@ -132,7 +132,7 @@ img {
 }
 
 .faq-box dt {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .faq-box p {
@@ -141,7 +141,7 @@ img {
 
 .faq-box .faq-answer {
   width: 90%;
-  margin: 0 auto 1rem;
+  margin: 0 auto 2rem;
 }
 
 .faq-box .faq-answer.hidden {
