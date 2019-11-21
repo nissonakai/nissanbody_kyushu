@@ -52,8 +52,11 @@ const pathsIMG = {
 srcDir : 'img_sources/',
 dstDir : 'img'
 }
-const srcGlob = pathsIMG.srcDir + '*.+(jpg|jpeg|png|gif|svg)';
-const dstGlob = pathsIMG.dstDir;
+
+const { srcDir, dstDir } = pathsIMG;
+
+const srcGlob = `${ srcDir }*.+(jpg|jpeg|png|gif|svg)`;
+const dstGlob = dstDir;
 
 const images = () => {
   return src(srcGlob)
