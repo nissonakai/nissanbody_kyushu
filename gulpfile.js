@@ -7,7 +7,6 @@ const gcmq = require('gulp-group-css-media-queries');
 const notify = require('gulp-notify');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
-const mozjpeg = require('imagemin-mozjpeg');
 const changed = require('gulp-changed');
 const webpackStream = require('webpack-stream');
 const webpack = require("webpack");
@@ -62,9 +61,6 @@ const images = () => {
     .pipe(imagemin(
       [
         pngquant({ quality:  [.85, .95], speed: 1 }),
-        mozjpeg({ quality: 80 }),
-        imagemin.svgo(),
-        imagemin.gifsicle()
       ]
     ))
     .pipe(dest( dstGlob ));
@@ -79,7 +75,11 @@ const build = () => {
     "**/img/*",
     "**/css/style.css",
     "**/js/*"])
-    .pipe(dest(outputPath));
+    .pipe(dest(outputPath))
+    .pipe(notify({
+      title: '画像を圧縮しました。',
+      message: new Date()
+    }));
 };
 
 
