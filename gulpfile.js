@@ -44,8 +44,8 @@ const compileJs = () => {
 const watchJsFiles = () => watch("js_sources/main.js", compileJs);
 
 const watchAssets = () => {
-  watchSassFiles()
-  watchJsFiles()
+  watchSassFiles();
+  watchJsFiles();
 };
 
 const pathsIMG = {
@@ -63,7 +63,11 @@ const images = () => {
         pngquant({ quality:  [.85, .95], speed: 1 }),
       ]
     ))
-    .pipe(dest( dstGlob ));
+    .pipe(dest( dstGlob ))
+    .pipe(notify({
+      title: '画像の圧縮が完了しました。',
+      message: new Date()
+    }));
 };
 
 
@@ -74,10 +78,10 @@ const build = () => {
     "index.html",
     "**/img/*",
     "**/css/style.css",
-    "**/js/*"])
+    "**/js/bundle.js*"])
     .pipe(dest(outputPath))
     .pipe(notify({
-      title: '画像を圧縮しました。',
+      title: 'ビルドが完了しました。',
       message: new Date()
     }));
 };
