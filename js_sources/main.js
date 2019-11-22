@@ -6,7 +6,7 @@ const mobileDevise = ['iphone', 'ipad', 'ipod', 'iemobile', 'tizen', 'android'];
 const checkedDevise = mobileDevise.filter(devise => {
     return uaCheck(devise);
 });
-if (checkedDevise.length > 0) {
+if (checkedDevise.length == 6) {
     location.href = 'https://www.717450.net/priority/nissanshatai_kyushu/'
 };
 
